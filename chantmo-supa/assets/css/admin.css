@@ -1,0 +1,230 @@
+/* Admin Dashboard Base Styles */
+body.admin-dashboard {
+    background-color: #f8f9fa;
+    padding-top: 56px;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    height: 100vh;
+    position: fixed;
+    padding-top: 56px;
+    overflow-y: auto;
+    box-shadow: 1px 0 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.sidebar .nav-link {
+    border-radius: 0.25rem;
+    margin-bottom: 0.25rem;
+    color: #495057;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s;
+}
+
+.sidebar .nav-link.active {
+    background-color: #0d6efd;
+    color: white !important;
+}
+
+.sidebar .nav-link:hover:not(.active) {
+    background-color: #e9ecef;
+}
+
+.sidebar .nav-link i {
+    width: 20px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+/* Main Content Area */
+main {
+    margin-left: 280px;
+    padding: 20px;
+    transition: margin-left 0.3s;
+}
+
+/* Top Navigation */
+.navbar-brand {
+    font-weight: 600;
+}
+
+/* Dashboard Cards */
+.dashboard-card {
+    border: none;
+    border-radius: 0.5rem;
+    transition: transform 0.2s;
+    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.075);
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+}
+
+.card-icon {
+    font-size: 2rem;
+    opacity: 0.7;
+}
+
+/* Tables */
+.table-responsive {
+    overflow-x: auto;
+}
+
+.table {
+    background-color: white;
+}
+
+.table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+}
+
+/* Forms */
+.form-control, .form-select {
+    padding: 0.5rem 0.75rem;
+}
+
+.form-label {
+    font-weight: 500;
+}
+
+/* Buttons */
+.btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+}
+
+/* Badges */
+.badge {
+    font-weight: 500;
+    padding: 0.35em 0.65em;
+}
+
+/* Modals */
+.modal-content {
+    border: none;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+}
+
+/* Footer */
+.footer {
+    background-color: #f8f9fa;
+    margin-left: 280px;
+    padding: 1rem 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .sidebar {
+        margin-left: -280px;
+    }
+    
+    main, .footer {
+        margin-left: 0;
+    }
+    
+    .sidebar.active {
+        margin-left: 0;
+    }
+}
+
+/* Status Badges */
+.badge.bg-pending {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+.badge.bg-processing {
+    background-color: #0dcaf0;
+    color: #212529;
+}
+
+.badge.bg-completed {
+    background-color: #198754;
+}
+
+.badge.bg-cancelled {
+    background-color: #dc3545;
+}
+
+/* Product Thumbnails */
+.admin-product-thumb {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid #dee2e6;
+}
+
+/* Alert Messages */
+.alert {
+    border-radius: 0.5rem;
+    padding: 1rem 1.25rem;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+    border: none;
+}
+
+/* Utility Classes */
+.mt-6 {
+    margin-top: 4rem;
+}
+
+.rounded-top-left-0 {
+    border-top-left-radius: 0 !important;
+}
+
+.rounded-top-right-0 {
+    border-top-right-radius: 0 !important;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Settings Page Styles */
+.nav-tabs .nav-link {
+    color: #495057;
+    border: 1px solid transparent;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+.nav-tabs .nav-link.active {
+    color: #0d6efd;
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6 #fff;
+}
+
+.tab-content {
+    padding: 20px;
+    border: 1px solid #dee2e6;
+    border-top: none;
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+
+.toggle-password {
+    border-top-right-radius: 0.25rem !important;
+    border-bottom-right-radius: 0.25rem !important;
+}
